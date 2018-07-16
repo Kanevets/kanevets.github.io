@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>ALEXANDER KANEVETS</title>
+
+<link href="assets/css/contact.css" rel="stylesheet" type="text/css" />
+
+<script src="//code.jquery.com/jquery-latest.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>
+<script src="assets/js/jquery.jigowatt.js"></script>
+
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+	<section id="contact">
+
+<header>
+
+			<h1>GET IN TOUCH WITH ALEXANDER KANEVETS</h1>
+
+		</header>
+
+		<mark id="message"></mark>
+
+		<form method="post" action="https://kanevets.000webhostapp.com/classes/contact.php" name="contactform" id="contactform" autocomplete="on">
+
+			<fieldset>
+
+				<legend>Contact Details</legend>
+
+				<div>
+					<label for="name" accesskey="U">Your Name</label>
+					<input name="name" type="text" id="name" placeholder="Enter your name" required="required" />
+				</div>
+				<div>
+					<label for="email" accesskey="E">Email</label>
+					<input name="email" type="email" id="email" placeholder="Enter your Email Address" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" required="required" />
+				</div>
+
+			</fieldset>
+
+			<fieldset>
+
+				<legend>Your Comments</legend>
+
+				<div>
+					<label for="comments" accesskey="C">Comments</label>
+					<textarea name="comments" cols="40" rows="3" id="comments" placeholder="Enter your comments" spellcheck="true" required="required"></textarea>
+				</div>
+
+			</fieldset>
+
+			<fieldset>
+
+				<legend>Are you human?</legend>
+
+				<label for="verify" accesskey="V" class="verify"><img src="https://kanevets.000webhostapp.com/classes/image.php" alt="Verification code" /></label>
+				<input name="verify" type="text" id="verify" size="6" required="required" style="width: 50px;" title="This confirms you are a human user and not a spam-bot." />
+
+			</fieldset>
+
+			<input type="submit" class="submit" id="submit" value="Submit" />
+
+		</form>
+
+	</section>
+
+</body>
+</html>
